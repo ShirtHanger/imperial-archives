@@ -6,7 +6,7 @@ function Main(props) {
 
   return (
     <>
-      <h2>This is the Main File!</h2>
+      <h2>[Declassified]</h2>
       <StarshipList starShips={props.starShips}/>
     </>
   )

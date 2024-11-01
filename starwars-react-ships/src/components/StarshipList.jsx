@@ -10,7 +10,7 @@ function StarshipList(props) {
 
         return (
         <>
-            <h3>This is the StarshipList file!</h3>
+            <h3>Starships File</h3>
             <div className="grid">
                 {/* Just using array.map to populate this component with API data, same old same old */}
                 {/* Summons each starShip object and grabs its poster and backdrop */}

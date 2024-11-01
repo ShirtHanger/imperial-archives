@@ -6,7 +6,7 @@ function Header(props) {
 
   return (
     <>
-      <h2>This is the Header File!</h2>
+      <h2>Check out more Star Wars stuff!</h2>
       <Nav/>
     </>
   )
