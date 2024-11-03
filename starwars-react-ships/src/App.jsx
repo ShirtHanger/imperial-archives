@@ -48,11 +48,7 @@ function App() {
       getAllStarWarsData('people', setPeople)
       getAllStarWarsData('films', setFilms)
       getAllStarWarsData('planets', setPlanets)
-
-      console.log(starShips)
-      console.log(people)
-      console.log(films)
-      console.log(planets)
+      
   }, [])
 
 

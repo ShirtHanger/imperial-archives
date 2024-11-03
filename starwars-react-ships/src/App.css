@@ -12,8 +12,15 @@ button {
   font-weight: 700;
 }
 
-button:hover {
+button, a:hover {
   background-color: #1e88e5;
+}
+
+.main-name, .price {
+  border: 1vw dashed yellow;
+  font-size: 3vw;
+  background: silver;
+  color: blue;
 }
 
 .grid {
