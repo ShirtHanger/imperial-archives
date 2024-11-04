@@ -13,6 +13,8 @@ function App() {
   const [planets, setPlanets] = useState([])
   const [films, setFilms] = useState([])
   const [people, setPeople] = useState([])
+  const [species, setSpecies] = useState([])
+  const [vehicles, setVehicles] = useState([])
 
   useEffect(() => {
 
@@ -50,6 +52,8 @@ function App() {
       getAllStarWarsData('people', setPeople)
       getAllStarWarsData('films', setFilms)
       getAllStarWarsData('planets', setPlanets)
+      getAllStarWarsData('species', setSpecies)
+      getAllStarWarsData('vehicles', setVehicles)
       
   }, [])
 
@@ -61,10 +65,12 @@ function App() {
       <Header></Header>
 
       <Main 
-      starShips={starShips}
       people={people}
       films={films}
       planets={planets}
+      species={species}
+      starShips={starShips}
+      vehicles={vehicles}
       />
       
     </>

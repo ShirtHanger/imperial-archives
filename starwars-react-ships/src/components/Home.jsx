@@ -5,7 +5,7 @@ function Home(props) {
 
   return (
     <>
-      <h1>Home File! (Hello there, General Kenobi)</h1>
+      <h1>Hello there, General Kenobi</h1>
     </>
   )
 }

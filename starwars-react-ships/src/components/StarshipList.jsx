@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Route, Routes, Link } from 'react-router-dom'
 
 function StarshipList(props) {
 
@@ -17,11 +18,7 @@ function StarshipList(props) {
                 {props.starShips.map((starShip, index) => (
                     <article key={index} className="card">
                         <h4 className="main-name">{starShip.name}</h4>
-                        <h5>{starShip.starship_class}</h5>
-                        <h5>Hyperdrive rating: {starShip.hyperdrive_rating}</h5>
-                        <h5>Model: {starShip.model}</h5>
-                        <p>The {starShip.name} was Manufactured by {starShip.manufacturer}, it can house {starShip.crew} crew members and {starShip.passengers} total passangers!</p>
-                        <h6 className='price'>${starShip.cost_in_credits}</h6>
+                        <h6 className='sub-detail'>${starShip.cost_in_credits}</h6>
                     </article>
                 ))}
             </div>

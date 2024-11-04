@@ -1,4 +1,5 @@
-import { useState } from 'react'
+/* import { useState } from 'react' */
+import { Link } from 'react-router-dom'
 
 function Nav(props) {
 
@@ -6,10 +7,14 @@ function Nav(props) {
     <>
       <h3>(None of these work RN)</h3>
       <ul>
-        <li>See <a href="#">Starships</a></li>
-        <li>See <a href="#">Characters</a></li>
-        <li>See <a href="#">Planets</a></li>
-        <li>See <a href="#">Films</a></li>
+        <li><Link to='/' className="list-link">Home</Link></li>
+
+        <li><Link to='/characters' className="list-link">Characters</Link></li>
+        <li><Link to='/films' className="list-link">Films</Link></li>
+        <li><Link to='/planets' className="list-link">Planets</Link></li>
+        <li><Link to='/species' className="list-link">Species</Link></li>
+        <li><Link to='/starships' className="list-link">Starships</Link></li>
+        <li><Link to='/vehicles' className="list-link">Vehicles</Link></li>
       </ul>
     </>
   )

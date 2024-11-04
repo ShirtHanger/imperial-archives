@@ -6,14 +6,11 @@ export const BASE_URL = `https://swapi.dev/api/`
 
 export const JSON_QUERY = `/?format=json`
 
-/* Starship URLs, may remove later */
+/* 
 
-export const BASE_STARSHIP_URL = `https://swapi.dev/api/starships/?format=json`
+<h5>{starShip.starship_class}</h5>
+<h5>Hyperdrive rating: {starShip.hyperdrive_rating}</h5>
+<h5>Model: {starShip.model}</h5>
+<p>The {starShip.name} was Manufactured by {starShip.manufacturer}, it can house {starShip.crew} crew members and {starShip.passengers} total passangers!</p>
 
-export const PAGE_ONE_URL = `https://swapi.dev/api/starships/?page=1&format=json`
-
-export const PAGE_TWO_URL = `https://swapi.dev/api/starships/?page=2&format=json`
-
-export const PAGE_THREE_URL = `https://swapi.dev/api/starships/?page=3&format=json`
-
-export const PAGE_FOUR_URL = `https://swapi.dev/api/starships/?page=4&format=json`
+*/
