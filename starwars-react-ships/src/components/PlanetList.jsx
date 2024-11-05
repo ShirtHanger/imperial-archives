@@ -17,7 +17,7 @@ function PlanetList(props) {
                 {/* Summons each planet object and grabs its poster and backdrop */}
                 {props.planets.map((planet, index) => (
                     <article key={index} className="card">
-                        <h4 className="main-name">{planet.name}</h4>
+                        <Link to={`/planets/${planet.name}`}><h4 className="main-name">{planet.name}</h4></Link>
                         <h6 className='sub-detail'>Terrain</h6>
                         <p>{planet.terrain}</p>
                     </article>

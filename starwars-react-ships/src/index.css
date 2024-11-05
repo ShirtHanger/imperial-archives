@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Tiny5&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+/* Backgrounds
+
+https://img.freepik.com/free-vector/pixel-rain-abstract-background_23-2148359307.jpg?t=st=1730766882~exp=1730770482~hmac=56502dacbdc0a3f3bcce825f3c17bf7c30acfbf240866fe01297a9b4f31bd44a&w=740
+https://img.freepik.com/free-vector/pixel-rain-abstract-background_23-2148360387.jpg?t=st=1730766892~exp=1730770492~hmac=363e23a1aae875e1ca6667ea21514b91e04c56e9c6f2b51abf536aa25795ce0d&w=740
+
+*/
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -9,6 +16,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #1b1b1b;
+/*   background: url('https://img.freepik.com/free-vector/pixel-rain-abstract-background_23-2148360387.jpg?t=st=1730766892~exp=1730770492~hmac=363e23a1aae875e1ca6667ea21514b91e04c56e9c6f2b51abf536aa25795ce0d&w=740');
+ */  background: url('https://img.freepik.com/free-vector/pixel-rain-abstract-background_23-2148359307.jpg?t=st=1730766882~exp=1730770482~hmac=56502dacbdc0a3f3bcce825f3c17bf7c30acfbf240866fe01297a9b4f31bd44a&w=740');
   font-family: "VT323", monospace;
-  color: silver;
+  color: goldenrod;
+  font-size: 2vw;
 }

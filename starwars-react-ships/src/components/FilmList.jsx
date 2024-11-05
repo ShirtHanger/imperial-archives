@@ -18,7 +18,7 @@ function FilmList(props) {
                 {props.films.map((film, index) => (
                     <article key={index} className="card">
                         <h6 className='sub-detail'>EPISODE {film.episode_id}</h6>
-                        <h4 className="main-name">{film.title}</h4>
+                        <Link to={`/films/${film.title}`}><h4 className="main-name">{film.title}</h4></Link>
                         <p>{film.release_date}</p>
                     </article>
                 ))}

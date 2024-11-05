@@ -17,7 +17,7 @@ function VehicleList(props) {
                 {/* Summons each vehicle object and grabs its poster and backdrop */}
                 {props.vehicles.map((vehicle, index) => (
                     <article key={index} className="card">
-                        <h4 className="main-name">{vehicle.name}</h4>
+                        <Link to={`/vehicles/${vehicle.name}`}><h4 className="main-name">{vehicle.name}</h4></Link>
                         <h6 className='sub-detail'>${vehicle.cost_in_credits}</h6>
                     </article>
                 ))}

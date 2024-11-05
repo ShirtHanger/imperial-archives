@@ -17,7 +17,7 @@ function StarshipList(props) {
                 {/* Summons each starShip object and grabs its poster and backdrop */}
                 {props.starShips.map((starShip, index) => (
                     <article key={index} className="card">
-                        <h4 className="main-name">{starShip.name}</h4>
+                        <Link to={`/starships/${starShip.name}`}><h4 className="main-name">{starShip.name}</h4></Link>
                         <h6 className='sub-detail'>${starShip.cost_in_credits}</h6>
                     </article>
                 ))}

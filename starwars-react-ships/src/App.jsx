@@ -61,7 +61,7 @@ function App() {
 
   return (
     <>
-      <h1>Welcome to the Star Wars data app!</h1>
+      <h1>Imperial Records Library</h1>
       <Header></Header>
 
       <Main 

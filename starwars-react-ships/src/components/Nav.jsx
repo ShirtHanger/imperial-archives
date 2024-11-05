@@ -5,7 +5,6 @@ function Nav(props) {
 
   return (
     <>
-      <h3>(None of these work RN)</h3>
       <ul>
         <li><Link to='/' className="list-link">Home</Link></li>
 

@@ -16,8 +16,8 @@ function SpeciesList(props) {
                 {/* Just using array.map to populate this component with API data, same old same old */}
                 {/* Summons each species object and grabs its poster and backdrop */}
                 {props.species.map((currentSpecies, index) => (
-                    <article key={index} className="card">
-                        <h4 className="main-name">{currentSpecies.name}</h4>
+                    <article key={index} className="card" >
+                        <Link to={`/species/${currentSpecies.name}`}><h4 className="main-name">{currentSpecies.name}</h4></Link>
                         <h6 className='sub-detail'>{currentSpecies.designation} {currentSpecies.classification}</h6>
                         <p>Language: {currentSpecies.language}</p>
                     </article>
