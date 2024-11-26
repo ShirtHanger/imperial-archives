@@ -5,10 +5,10 @@
   "homepage": "https://shirthanger.github.io/u3_react_axios_lab/",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run dist",
-    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
-    "dist": "vite dist",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
