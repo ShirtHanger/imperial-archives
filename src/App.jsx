@@ -18,42 +18,40 @@ function App() {
 
   useEffect(() => {
 
-/* 
-    The basic function that only gets you the first 10 ships
-    Wasn't good enough for me. 
-    I wanted ALL data, not just the first 10
+ 
+    /*Originaly, only got first 10 objects from the API. The new community link gets you everything! */
 
     async function getStarWarsData(category, setStarWarsData) {
-      let response = await axios.get(`${BASE_URL}${category}${JSON_QUERY}`)
-      let currentPageOfData = response.data.results
+      let response = await axios.get(`${BASE_URL}${category}`)
+      let currentPageOfData = response.data
       setStarWarsData(currentPageOfData)
       }
- */
 
-/* I was finally able to get ALL data instead of just 10 using a for loop, which is also scaleable */
+  /* Function used for original link (https://swapi.dev/api/${category}?format=json), old link is depracated
+  New community link does not require this complex function */
    async function getAllStarWarsData(category, setStarWarsData) {
   
-    let fullURL = `${BASE_URL}${category}${JSON_QUERY}`
-    let allPagesOfData = [] /* This will be filled with ALL objects from the numerous response URLs */
-    while (fullURL) { /* When the final page is reached, break the while loop */
-      
+    let fullURL = `${BASE_URL}${category}${JSON_QUERY}` 
+    let allPagesOfData = [] // This will be filled with ALL objects from the numerous response URLs 
+    while (fullURL) { // When the final page is reached, break the while loop
+    
       let response = await axios.get(fullURL)
       let currentPageOfData = response.data.results
-      allPagesOfData = [...allPagesOfData, ...currentPageOfData] /* Adds to list */
-      fullURL = response.data.next /* Moves onto next page, unless none exist */
+      allPagesOfData = [...allPagesOfData, ...currentPageOfData] // Adds to list
+      fullURL = response.data.next // Moves onto next page, unless none exist
       }
 
-    setStarWarsData(allPagesOfData) /* Sets array of API data to the final project, all pages */
+    setStarWarsData(allPagesOfData) // Sets array of API data to the final project, all pages
    }
 
     
   
-      getAllStarWarsData('starships', setStarShips)
-      getAllStarWarsData('people', setPeople)
-      getAllStarWarsData('films', setFilms)
-      getAllStarWarsData('planets', setPlanets)
-      getAllStarWarsData('species', setSpecies)
-      getAllStarWarsData('vehicles', setVehicles)
+      getStarWarsData('starships', setStarShips)
+      getStarWarsData('people', setPeople)
+      getStarWarsData('films', setFilms)
+      getStarWarsData('planets', setPlanets)
+      getStarWarsData('species', setSpecies)
+      getStarWarsData('vehicles', setVehicles)
       
   }, [])
 
